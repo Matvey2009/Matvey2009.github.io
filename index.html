@@ -13,7 +13,7 @@
 var snake=document.getElementById("snake"), // все переменые
 ctx=snake.getContext("2d"),
 xS=snake.width, yS=snake.height, //ширина и высота рисунка
-imgS=new Image(),imgF=new Image(), pattern,//фаилы картинок
+imgS=new Image(),imgF=new Image(), //фаилы картинок
 audFruit=new Audio(), audFeil=new Audio(),//фаилы звуков
 qS=25, rS=0, tS=1000/15, //размер клетки
 xF, yF, //фрукт
@@ -62,8 +62,7 @@ function feil() {
 
 setInterval(function() { //отрисовка кадра
 //поле
-pattern=ctx.createPattern(imgS, "repeat");
-ctx.fillStyle=pattern;
+ctx.fillStyle=ctx.createPattern(imgS, "repeat");
 ctx.fillRect(0, 0, xS, yS);
 
 //фрукт
