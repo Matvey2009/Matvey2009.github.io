@@ -1,0 +1,110 @@
+<!DOCTYAPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>snake</title>
+	<link rel="shortcut icon" href="js/Snake/snake.ico" type="image/x-icon"/>
+</head>
+<body>
+
+<canvas id="snake" width="800" height="600">обн. бр.</canvas>
+
+<script type="text/javascript"> <!-- программка -->
+var snake=document.getElementById("snake"), // все переменые
+ctx=snake.getContext("2d"),
+xS=snake.width, yS=snake.height, //ширина и высота рисунка
+imgS=new Image(),imgF=new Image(), //фаилы картинок
+audFruit=new Audio(), audFeil=new Audio(),//фаилы звуков
+qS=25, rS=0, tS=1000/15, //размер клетки
+xF, yF, //фрукт
+xZ=xS/2, yZ=yS/2,//змйка (голова)
+vK, xK=0, yK=0, //кнопки
+xZarr=[], yZarr=[], arr; //масив хвоста змейки
+
+imgS.src="js/Snake/Z.png";//куку
+imgF.src="js/Snake/Fruit.png";//
+audFruit.src="js/Snake/audFruit.ogg";
+audFeil.src="js/Snake/audFeil.ogg";
+
+//Положение текста
+ctx.textBaseline="middle";
+ctx.textAlign="center";
+
+fruit();
+
+//Расчет рандома фрукта
+function fruit() {
+xF=Math.round(Math.random()*(xS/qS-1))*qS;
+yF=Math.round(Math.random()*(yS/qS-1))*qS;
+for (arr=0; arr<=rS; arr++) if (xZarr[arr]==xF && yZarr[arr]==yF) fruit();
+}
+
+
+onkeydown=function(event) { //управленией змейкакй
+	event.preventDefault();
+	switch(event.keyCode) {
+		case 38: case 87: if(vK!=1) {xK=0, yK=-qS, vK=1}; break;
+		case 39: case 68: if(vK!=2) {xK=qS, yK=0, vK=2}; break;
+		case 40: case 83: if(vK!=1) {xK=0, yK=qS, vK=1}; break;
+		case 37: case 65: if(vK!=2) {xK=-qS, yK=0, vK=2}; break;
+	}
+};
+
+//столкнавение
+function feil() {
+	ctx.fillStyle="Green";
+	ctx.fillRect(0, 0, xS, yS);
+	audFeil.play();
+	xZarr.length=1;
+	yZarr.length=1;
+	rS=0;
+};
+
+setInterval(function() { //отрисовка кадра
+//поле
+ctx.fillStyle=ctx.createPattern(imgS, "repeat");
+ctx.fillRect(0, 0, xS, yS);
+
+//фрукт
+ctx.drawImage(imgF, xF+qS/2-17, yF+qS/2-17)
+
+//движение змейки
+xZ=xZ+xK;
+if (xZ>=xS) xZ=0;
+if (xZ<0) xZ=xS-qS;
+yZ=yZ+yK;
+if (yZ>=yS) yZ=0;
+if (yZ<0) yZ=yS-qS;
+
+//проверка на столкнавение
+for (arr=0; arr<=rS; arr++) if (xZarr[arr]==xZ && yZarr[arr]==yZ) feil();
+
+//массивS
+xZarr.unshift(xZ);
+yZarr.unshift(yZ);
+
+//змейка
+ctx.fillStyle="Red";
+for (arr=0; arr<=rS; arr++) ctx.fillRect(xZarr[arr]+1, yZarr[arr]+1, qS-2 , qS-2 );
+
+//ням-ням фрукт
+if (xZ==xF && yZ==yF) {
+	audFruit.play();
+	fruit();
+	rS++;
+	}
+	else {
+	xZarr.pop();
+	yZarr.pop();
+	};
+	
+	//счётчик фруктов
+	ctx.fillStyle="black";
+	ctx.font="bold 13pt Arial";
+	ctx.fillText(rS+1, xZ+qS/2, yZ+qS/2);
+
+}, tS);
+
+</script>
+</body>
+</html>
