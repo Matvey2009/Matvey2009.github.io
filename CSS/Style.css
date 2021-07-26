@@ -1,3 +1,26 @@
-body{
-    background-color: brown;
+header{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    background: #2D2D2D;
+    border-radius: 10px;
+}
+
+.header-text{
+    position: absolute;
+    width: 1105px;
+    height: 91px;
+    left: 260px;
+    top: 200px;
+    
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 72px;
+    line-height: 91px;
+    /* identical to box height */
+    
+    text-align: center;
+    
+    color: #FFFFFF;
 }
