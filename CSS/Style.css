@@ -1,5 +1,5 @@
+/* Стили  */
 header{
-    position: absolute;
     width: 100%;
     height: auto;
     background: #2D2D2D;
@@ -23,4 +23,40 @@ header{
     text-align: center;
     
     color: #FFFFFF;
+}
+
+#title{
+    background-color: rgb(255, 24, 24);
+}
+
+.program{
+    margin: 16px;
+}
+
+.program_text{
+    position: absolute;
+    width: 1105px;
+    height: 91px;
+    left: 15px;
+    top: 900px;
+    
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 91px;
+}
+
+.program_text_min{
+    position: absolute;
+    width: 1105px;
+    height: 91px;
+    left: 15px;
+    top: 925px;
+    
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 91px;
 }
