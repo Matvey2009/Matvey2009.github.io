@@ -3,7 +3,8 @@ header{
     width: 100%;
     height: auto;
     background: #2D2D2D;
-    border-radius: 10px;
+    background-color: rgb(39, 39, 39);
+    
 }
 
 .header-text{
@@ -25,38 +26,45 @@ header{
     color: #FFFFFF;
 }
 
-#title{
-    background-color: rgb(255, 24, 24);
+main{
+    background-color: rgb(39, 39, 39);
 }
+body{
+    background-color: rgb(39, 39, 39);
+}
+
 
 .program{
     margin: 16px;
+    width: 33%;
+}
+
+.cont{
+    display:flex;
 }
 
 .program_text{
-    position: absolute;
-    width: 1105px;
-    height: 91px;
-    left: 15px;
-    top: 900px;
-    
     font-family: 'Rubik', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 32px;
-    line-height: 91px;
+    color: #ffffff;
+    border: 1px solid #e5ff00;
 }
 
 .program_text_min{
-    position: absolute;
-    width: 1105px;
-    height: 91px;
-    left: 15px;
-    top: 925px;
-    
     font-family: 'Rubik', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
-    line-height: 91px;
+    color: #ffffff;
+    border: 1px solid #00ff00;
+}
+
+.img_left{
+    border: 1px solid #3700ff;
+}
+
+.img_right{
+    border: 1px solid #ff0000;
 }
