@@ -1,18 +1,25 @@
 /* Стили  */
+
+body{
+    background-color: #272727;
+    color: #ffffffb4;
+}
+
+article{
+    display: flex;
+}
+
 header{
     width: 100%;
     height: auto;
-    background: #2D2D2D;
+    background: #272727;
     background-color: rgb(39, 39, 39);
+    background-size: 100%
     
 }
 
 .header-text{
-    position: absolute;
-    width: 1105px;
-    height: 91px;
-    left: 260px;
-    top: 200px;
+    transform: translate(0%, -200%);
     
     font-family: 'Rubik', sans-serif;
     font-style: normal;
@@ -27,13 +34,15 @@ header{
 }
 
 main{
-    background-color: rgb(39, 39, 39);
+    background-color: #272727;
 }
 body{
-    background-color: rgb(39, 39, 39);
+    background-color: #272727;
 }
 
-
+#programs{
+    display: flex;
+}
 .program{
     margin: 16px;
     width: 33%;
@@ -49,7 +58,7 @@ body{
     font-weight: bold;
     font-size: 32px;
     color: #ffffff;
-    border: 1px solid #e5ff00;
+    border: 1px solid #272727;
 }
 
 .program_text_min{
@@ -58,13 +67,23 @@ body{
     font-weight: bold;
     font-size: 16px;
     color: #ffffff;
-    border: 1px solid #00ff00;
+    border: 1px solid#272727;
 }
 
 .img_left{
-    border: 1px solid #3700ff;
+    border: 1px solid #272727;
 }
 
 .img_right{
-    border: 1px solid #ff0000;
+    border: 1px solid #272727;
+}
+
+.program_data{
+
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    color: #ffffff;
+    
 }
