@@ -1,15 +1,15 @@
-var nt = "img/image 6.png", bat = "img/bat.png", Cpp = "img/Cpp.png", Vs = "img/ribbon.png", Cmm = "img/C-Sharp.png",
+var nt = "img/image 6.png", bat = "img/Bat.png", Cpp = "img/Cpp.png", Vs = "img/ribbon.png", Cmm = "img/C-Sharp.png",
     U = "img/unity.png", abc = "img/ABC.png", java = "img/Java.png", p = "img/python.png", pc = "img/PC.png", js = "img/JavaScript.png";
 var listProg = [
     ["Hello World", "Первая программа", "2018", "img/prog01.jpg", nt, bat],
-    ["Password", "Просто пароль", "2018", "img/parol.jpg", nt, bat],
+    ["Password", "Просто пароль", "2018", "img/Parol.png", nt, bat],
     ["Square", "Просто квадрат", "2018", "img/prog04 1.jpg", nt, bat],
     ["Squarex2", "Два квадрат", "2018", "img/prog05.jpg", nt, bat],
     ["Матвей", "КМН", "2018", "img/prog06.jpg", nt, bat],
     ["Hello World", "Hello World", "2018", "img/prog07.jpg", Cpp, Vs],
     ["Аквариум", "Просто Аквариум", "2019", "img/Aqvarium.png", Cpp, Vs],
     ["KNB", "Камень-Ножницы-Бумага", "2018", "img/KNB.png", nt, bat],
-    ["Myosu", "Авторская версия OSUUU", "2018", "Myosu.png", nt, bat],
+    ["Myosu", "Авторская версия OSUUU", "2018", "img/Myosu.png", nt, bat],
     ["Unity game", "Игра юнити", "2018", "img/image 8.png", U, U],
     ["ПАРАДОКС", "ПАРАДООКС", "2018", "img/Парадокс.png", Cpp, Vs],
     ["Танчики", "Tan4iki", "2018", "img/Tank.png", Cpp, Vs],
@@ -19,15 +19,47 @@ var listProg = [
     ["Tetris", "МОЙ Tetris", "2018", "img/image 12.png", java, nt],
     ["WebInfo", "Webinfo", "2018", "img/prog001.png", p, pc],
     ["AuxProg", "АВТОКЛИКЕР", "2018", "img/image 14.png", p, pc],
-
-
 ];
 
-var prog = document.getElementById("programs");
+var section = document.getElementById("primer");
 
 for(let i of listProg){
-    var block = document.createElement("article");
+    let block = document.createElement("article");
     block.className = "program";
-    block.textContent = i;
-    prog.appendChild(block);
+    section.appendChild(block);
+
+    let bgimg = document.createElement("img");
+    bgimg.className = "pr-bgimg";
+    bgimg.src = i[3];
+    block.appendChild(bgimg);
+
+    let image = document.createElement("img");
+    image.className = "pr-image";
+    image.src = i[3];
+    block.appendChild(image);
+
+    let year = document.createElement("div");
+    year.className = "pr-year";
+    year.textContent = i[2]; 
+    block.appendChild(year);
+
+    let leng = document.createElement("img");
+    image.className = "pr-leng logo";
+    leng.src = i[3];
+    block.appendChild(leng);
+
+    let tool = document.createElement("img");
+    tool.className = "pr-tool logo";
+    tool.src = i[7];
+    block.appendChild(tool);
+
+    let text = document.createElement("div");
+    text.className = "pr-text";
+    text.textContent = i[1]; 
+    block.appendChild(text);
+
+    let name = document.createElement("div");
+    name.className = "pr-name";
+    name.textContent = i[1]; 
+    block.appendChild(name);
 };
