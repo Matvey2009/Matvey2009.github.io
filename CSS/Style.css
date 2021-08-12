@@ -1,30 +1,21 @@
-/* Стили  */
-
 body{
     background-color: #272727;
     color: #ffffffb4;
 }
 
-article{
-    display: flex;
-}
-
 header{
     width: 100%;
-    height: auto;
     background: #272727;
-    background-color: rgb(39, 39, 39);
-    background-size: 100%
-    
+    background-color: #272727;
 }
 
 .header-text{
-    transform: translate(0%, -200%);
+    transform: translate(0%, -230%);
     
     font-family: 'Rubik', sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 72px;
+    font-size: 89px;
     line-height: 91px;
     /* identical to box height */
     
@@ -34,56 +25,106 @@ header{
 }
 
 main{
-    background-color: #272727;
+    margin: 0 10%;
 }
-body{
-    background-color: #272727;
+
+section{
+    display: grid;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+h2{
+    margin: 1em 18em;
 }
 
 #programs{
-    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8em;
 }
+
 .program{
-    margin: 16px;
-    width: 33%;
+    position: relative;
+    height: 0;
+    padding-top: 100%;
 }
 
-.cont{
-    display:flex;
+.pr-bgimg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    filter: blur(2px);
+    background-color: rgba(0, 0, 0, 0.479);
 }
 
-.program_text{
+.pr-image{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: contain;
+}
+
+.pr-year{
+    position: absolute;
+    top: 14.4em;
+    right: 2.2em;
+    font-size: 1.2em;
     font-family: 'Rubik', sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 32px;
+    font-size: 24px;
     color: #ffffff;
-    border: 1px solid #272727;
 }
 
-.program_text_min{
-    font-family: 'Rubik', sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    color: #ffffff;
-    border: 1px solid#272727;
+.pr-leng{
+    position: absolute;
+    top: 22em;
+    right: 0em;
+}
+
+.pr-tool{
+    position: absolute;
+    top: 22em;
+    right: 18.9em;
 }
 
 .img_left{
     border: 1px solid #272727;
 }
 
-.img_right{
-    border: 1px solid #272727;
+
+.pr-text{
+    position: absolute;
+    bottom: -3.3em;
+    left: 3em;
+    color: #272727;
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    color: #ffffff;
+    
 }
 
-.program_data{
-
+.pr-name{
+    position: absolute;
+    top: 14.3em;
+    left: 2em;
+    font-size: 1.5em;
     font-family: 'Rubik', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
     color: #ffffff;
-    
+}
+
+.logo{
+    width: 48px;
+    height: 48px;
 }
