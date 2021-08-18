@@ -1,6 +1,7 @@
 body{
     background-color: #272727;
     color: #ffffffb4;
+    margin: -10em;
 }
 
 header{
@@ -10,12 +11,14 @@ header{
 }
 
 .header-text{
-    transform: translate(0%, -230%);
+    position: absolute;
+    bottom: 6.7em;
+    left: 0.2em;
     
     font-family: 'Rubik', sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 89px;
+    font-size: 5em;
     line-height: 91px;
     /* identical to box height */
     
@@ -38,12 +41,14 @@ img{
 }
 
 h2{
-    margin: 1em 18em;
+    margin: 0.7em 12.2em;
+    color: white;
+    font-size: 3em;
 }
 
 #programs{
     grid-template-columns: repeat(3, 1fr);
-    gap: 8em;
+    gap: 6em;
 }
 
 .program{
@@ -72,8 +77,8 @@ h2{
 
 .pr-year{
     position: absolute;
-    top: 14.4em;
-    right: 2.2em;
+    top: 19.4em;
+    right: 2.5em;
     font-size: 1.2em;
     font-family: 'Rubik', sans-serif;
     font-style: normal;
@@ -84,14 +89,14 @@ h2{
 
 .pr-leng{
     position: absolute;
-    top: 22em;
+    top: 29em;
     right: 0em;
 }
 
 .pr-tool{
     position: absolute;
-    top: 22em;
-    right: 18.9em;
+    top: 29em;
+    right: 25.6em;
 }
 
 .img_left{
@@ -101,7 +106,7 @@ h2{
 
 .pr-text{
     position: absolute;
-    bottom: -3.3em;
+    bottom: -3.4em;
     left: 3em;
     color: #272727;
     font-family: 'Rubik', sans-serif;
@@ -114,7 +119,7 @@ h2{
 
 .pr-name{
     position: absolute;
-    top: 14.3em;
+    top: 19em;
     left: 2em;
     font-size: 1.5em;
     font-family: 'Rubik', sans-serif;

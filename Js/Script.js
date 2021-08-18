@@ -10,15 +10,15 @@ var listProg = [
     ["Аквариум", "Аквариум", "2019", "img/Aqvarium.png", Cpp, Vs],
     ["KNB", "Камень-Ножницы-Бумага", "2018", "img/KNB.png", nt, bat],
     ["Myosu", "Авторская версия OSUUU", "2018", "img/Myosu.png", nt, bat],
-    ["Unity game", "Игра юнити", "2018", "img/image 8.png", U, U],
+    ["Unity game", "Игра юнити", "2019", "img/image 8.png", U, U],
     ["ПАРАДОКС", "ПАРАДООКС", "2018", "img/Парадокс.png", Cpp, Vs],
     ["Танчики", "Tan4iki", "2018", "img/Tank.png", Cpp, Vs],
-    ["Змейка", "Моя змейка", "2018", "img/image 10.png", js, nt],
+    ["Змейка", "Моя змейка", "2019", "img/image 10.png", js, nt],
     ["sort.p", "Сортировка пузырьком", "2018", "img/og01 1.png", abc, abc],
     ["Домик", "Домик", "2018", "img/prog01 2.png", abc, abc],
-    ["Tetris", "МОЙ Tetris", "2018", "img/image 12.png", java, nt],
-    ["WebInfo", "Webinfo", "2018", "img/prog001.png", p, pc],
-    ["AuxProg", "АВТОКЛИКЕР", "2018", "img/image 14.png", p, pc],
+    ["Tetris", "МОЙ Tetris", "2019", "img/image 12.png", java, nt],
+    ["WebInfo", "Webinfo", "2020", "img/prog001.png", p, pc],
+    ["AuxProg", "АВТОКЛИКЕР", "2020", "img/image 14.png", p, pc],
 ];
 
 var section = document.getElementById("programs");
