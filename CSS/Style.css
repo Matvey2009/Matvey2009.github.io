@@ -72,6 +72,7 @@ h3{
     border-radius: 0.3em;
 }
 
+
 .program{
     position: relative;
     height: 0;
@@ -152,7 +153,69 @@ h3{
     color: #ffffff;
 }
 
+#languages{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+    border: yellow solid 1px;
+}
+
+.lang{
+    position: relative;
+    height: 10em;
+    border:lime solid 1px;
+}
+
+.image_block{
+    position: absolute;
+    width: 40%;
+    height: 10em;
+}
+
+.ln-image{
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    object-fit:contain;
+    height: 100%;
+}
+
+.ln-text{
+    position: absolute;
+    bottom: 3.4em;
+    left: 6.3em;
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    color: #ffffff;
+}
+
+.ln-opinion{
+    position: absolute;
+    bottom: 3em;
+    left: 7.75em;
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    color: #ffffff;
+}
+
+
 .logo{
     width: 48px;
     height: 48px;
+}
+
+#up{
+    position: fixed;
+    z-index: 1;
+    bottom: 1em;
+    right: 1em;
+    display: none;
+    color: #00000050;
+    background-color: #ffffff50;
+    border: 1px solid #00000050;
+    border-radius: 100%;
 }

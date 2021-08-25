@@ -23,10 +23,10 @@ var listProg = [
 ];
 var listLang = [
     //Языки которые я знаю
-    ["img/Bat.png",        "Batch-неполноценный язык програмировния", "Знания-Среднее"],
+    ["img/Bat.png",        "Batch-неполный язык програм.",            "Знания-Среднее"],
     ["img/JavaScript.png", "JavaScript-Мне нравится",                 "Знания-Повехностно"],
     ["img/Cpp.png",        "C++-Язык Языков",                         "Знания-Повехностно"],
-    ["img/python.png",     "Python-Питон удобный и хороший ",         "Знания-Среднее"],
+    ["img/python.png",     "Python-Питон удобный",                    "Знания-Среднее"],
     ["img/C-Sharp.png",    "C#-удобный и лёгкий",                     "Знания-Среднее"],
     ["img/ABC.png",        "Pascal-Быстрый",                          "Знания-Ниже среднего"],
     ["img/Java.png",       "Java-Хороший",                            "Знания-Поверхностно"],
@@ -89,3 +89,43 @@ for(let i of listProg){
     name.textContent = i[0]; 
     block.appendChild(name);
 };
+
+var section2 = document.getElementById("languages");
+
+for(let i of listLang){
+    let block = document.createElement("article");
+    block.className = "lang";
+    section2.appendChild(block);
+
+    let div = document.createElement("div");
+    div.className = "image_block";
+    block.appendChild(div);
+
+    let image = document.createElement("img");
+    image.className = "ln-image";
+    image.src = i[0];   
+    div.appendChild(image);
+
+    let text = document.createElement("div");
+    text.className = "ln-text";
+    text.textContent = i[1]; 
+    block.appendChild(text);
+
+    let opinion = document.createElement("div");
+    opinion.className = "ln-opinion";
+    opinion.textContent = i[2]; 
+    block.appendChild(opinion);
+}
+
+var up = document.getElementById("up");
+    up.onclick = () => {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+
+window.onscroll = () => {
+    if (document.body.scrollTop > 512 || document.documentElement.scrollTop > 512)
+        up.style.display = "block";
+    else
+        up.style.display = "none";
+}
