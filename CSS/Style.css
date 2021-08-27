@@ -19,7 +19,6 @@ header{
     font-style: normal;
     font-weight: bold;
     font-size: 5.5em;
-    line-height: 91px;
     /* identical to box height */
     
     text-align: center;
@@ -85,7 +84,7 @@ h3{
     left: 50%;
     transform: translate(-50%, -50%);
     object-fit: cover;
-    filter: blur(2px);
+    filter: blur(0.2em);
     background-color: rgba(0, 0, 0, 0.479);
     height: 75%;
 }
@@ -108,7 +107,7 @@ h3{
     font-family: 'Rubik', sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 1.4em;
     color: #ffffff;
 }
 
@@ -124,10 +123,6 @@ h3{
     right: 0;
 }
 
-.img_left{
-    border: 1px solid #272727;
-}
-
 .pr-text{
     position: absolute;
     bottom: 0em;
@@ -136,7 +131,7 @@ h3{
     font-family: 'Rubik', sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 1em;
     color: #ffffff;
     
 }
@@ -149,7 +144,7 @@ h3{
     font-family: 'Rubik', sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 1.4em;
     color: #ffffff;
 }
 
@@ -185,7 +180,7 @@ h3{
     font-family: 'Rubik', sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 32px;
+    font-size: 2em;
     color: #ffffff;
 }
 
@@ -196,13 +191,13 @@ h3{
     font-family: 'Rubik', sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 26px;
+    font-size: 1.63em;
     color: #ffffff;
 }
 
 .logo{
-    width: 48px;
-    height: 48px;
+    width: 3em;
+    height: 3em;
 }
 
 #up{
@@ -213,13 +208,14 @@ h3{
     display: none;
     color: #00000050;
     background-color: #ffffff50;
-    border: 1px solid #00000050;
+    border: 0.2em solid #00000050;
     border-radius: 100%;
 }
 
 footer{
     background-image:url(../img/bg.png);
-    height: 15.2em;
+    font-size: 1.63em;
+    height: 9.3em;
     color: #272727;
 }
 
