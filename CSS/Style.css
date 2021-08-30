@@ -64,6 +64,12 @@ h3{
     gap: 1em;
 }
 
+a{
+    color: #969696;
+    font-size: 1.6em;
+    text-align: center;
+}
+
 .game{
     margin: 1em 0;
     height: 50%;
@@ -87,6 +93,7 @@ h3{
     filter: blur(0.2em);
     background-color: rgba(0, 0, 0, 0.479);
     height: 75%;
+    border: #727272 solid 0.5em;
 }
 
 .pr-image{
