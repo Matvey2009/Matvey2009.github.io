@@ -64,7 +64,7 @@ h3{
     gap: 1em;
 }
 
-a{
+a{ 
     color: #969696;
     font-size: 1.6em;
     text-align: center;
@@ -221,11 +221,12 @@ a{
 
 footer{
     background-image:url(../img/bg.png);
-    font-size: 1.63em;
     height: 9.3em;
+}
+footer a{
+    font-size: 1em;
     color: #272727;
 }
-
 .pt{
     bottom: 3em
 }
